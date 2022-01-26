@@ -1,0 +1,25 @@
+{
+  "name": "aws_dynamo",
+  "version": "1.0.0",
+  "description": "Gzip compression with Node.js and DynamoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest __tests__/unit"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@bugsnag/js": "^7.16.0",
+    "@bugsnag/plugin-express": "^7.16.0",
+    "aws-sdk": "^2.1048.0",
+    "aws-serverless-express": "^3.4.0",
+    "compression": "^1.7.4",
+    "express": "^4.17.2",
+    "node-gzip": "^1.1.2"
+  },
+  "devDependencies": {
+    "install": "^0.13.0",
+    "jest": "^27.4.7",
+    "serverless-offline": "^8.3.1"
+  }
+}
