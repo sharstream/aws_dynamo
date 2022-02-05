@@ -1,10 +1,11 @@
 {
   "name": "aws_dynamo",
   "version": "1.0.0",
-  "description": "Gzip compression with Node.js and DynamoDB",
+  "description": "Microservice using Node.js and DynamoDB",
   "main": "index.js",
   "scripts": {
-    "test": "jest __tests__/unit"
+    "test": "jest __tests__/unit",
+    "local-na": "serverless offline start -s dev --region us-west-2 --apiKey apikey-1122"
   },
   "author": "",
   "license": "ISC",
@@ -15,11 +16,19 @@
     "aws-serverless-express": "^3.4.0",
     "compression": "^1.7.4",
     "express": "^4.17.2",
-    "node-gzip": "^1.1.2"
+    "jsonwebtoken": "^8.5.1",
+    "node-gzip": "^1.1.2",
+    "winston": "^3.5.0"
   },
   "devDependencies": {
-    "install": "^0.13.0",
     "jest": "^27.4.7",
     "serverless-offline": "^8.3.1"
+  },
+  "prettier": {
+    "printWidth": 120,
+    "trailingComma": "es5",
+    "tabWidth": 4,
+    "seim": true,
+    "singleQuote": false
   }
 }
