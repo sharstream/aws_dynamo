@@ -48,6 +48,8 @@ module.exports = class {
             params.TableName = this.tableName;
         }
 
+        if (!!returnValue) params.ReturnValues = returnValues;
+
         try {
             const db_response = await this.client.update(params).promise();
             return db_response;
